@@ -1,8 +1,10 @@
 var mongoose = require('mongoose');
 
 var msgSchema = new mongoose.Schema({
-	name: String,
-	comment: String
+	text: String,
+	from: String,
+	room: String,
+	avatar: String
 });
 
 mongoose.model('msgModel', msgSchema);
